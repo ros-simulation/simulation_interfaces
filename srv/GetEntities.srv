@@ -1,0 +1,10 @@
+# Get objects in the scene which can be interacted, e.g. with using SetEntityState.
+
+string filter                                       # Optional, defaults to empty. Return entities with matching names.
+
+---
+
+Entity[] entities                                   # All entities with names matching the filter, poses and twists.
+
+bool success                                        # Return true if successful.
+string status_message                               # Additional comments or error status.

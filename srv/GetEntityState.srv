@@ -1,0 +1,10 @@
+# Get state of an object. Valid objects are on the list returned by GetEntities.
+
+string name                                             # Unique name as returned by GetEntities / SpawnEntity.
+
+---
+
+EntityState entity_state                                # Entity ground truth state including pose and twist.
+
+bool success                                            # Return true if successful.
+string status_message                                   # Additional comments or error status.

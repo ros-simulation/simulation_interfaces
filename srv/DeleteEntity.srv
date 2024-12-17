@@ -1,0 +1,8 @@
+# Remove an entity (a robot, other object) by unique name from the simulation
+
+string name                         # Unique name with a namespace, as returned by SpawnEntity or GetEntities.
+
+---
+
+bool success                        # return true if deleted successfully.
+string status_message               # On failure, an user-ready error message.

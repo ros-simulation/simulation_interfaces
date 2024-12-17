@@ -1,0 +1,9 @@
+# Pauses or unpauses the simulation
+
+bool pause                          # If true, sets simulation state to paused, otherwise sets it to running.
+                                    # If already in target state, nothing happens but status_message informs about it.
+
+---
+
+bool success                        # Return true if pausing / resuming was successful.
+string status_message               # Additional comments or error status..

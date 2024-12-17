@@ -1,0 +1,10 @@
+# Get predefined spawn poses which is convenient to avoid spawning in invalid spaces.
+# This is an optional simulation feature: check status_message if you receive an empty spawn_poses vector,
+# to determine whether this feature is not supported by your simulator, or spawn poses are simply not defined.
+
+---
+
+SpawnPose[] spawn_poses                             # A list of predefined spawn_poses, which may be empty.
+
+bool success                                        # Return true if successful.
+string status_message                               # Additional comments or error status.

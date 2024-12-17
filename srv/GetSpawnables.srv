@@ -1,0 +1,9 @@
+# Return a list of resources which are valid as SpawnEntity uri fields (e.g. visible to or registered in simulator).
+# This interface is an optional extension and might not be implemented by your simulator, check the status_message.
+
+---
+
+Spawnable[] spawnables                              # Spawnable objects with URI and additional information.
+
+bool success                                        # Return true if successful.
+string status_message                               # Additional comments or error status.

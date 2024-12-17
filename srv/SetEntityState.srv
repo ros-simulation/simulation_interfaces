@@ -1,0 +1,9 @@
+# Set a state of an object, which will result in an instant change in its pose and/or twist.
+
+string name                             # Unique name as returned by GetEntities or SpawnEntity.
+EntityState state                       # New state to set immediately. The timestamp in header is ignored.
+
+---
+
+bool success                            # Return true if successful.
+string status_message                   # Additional comments or error status.

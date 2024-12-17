@@ -1,0 +1,7 @@
+# Reset the simulation to the start, including the entire scene and the simulation time.
+# Objects that were dynamically spawned are de-spawned.
+
+---
+
+bool success                        # Return true if successful.
+string status_message               # Additional comments or error status..

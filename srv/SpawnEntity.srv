@@ -1,0 +1,16 @@
+# Spawn an entity (a robot, other object) by name or URI
+
+string name                         # Suggest a name to give to the spawned entity. If left empty, it will be generated.
+                                    # Due to requirement for name uniqueness and the namespace, check the status_message
+                                    # to get an actual unique name to use for further queries.
+string uri                          # Resource such as SDF or URDF file, or in native format such as prefab.
+                                    # Valid URIs can be determined by calling GetSpawnables first,
+                                    # if the feature is supported by your simulator.
+string robot_namespace              # Spawn robot or another object with all its interfaces under this namespace.
+string reference_frame              # Optional initial pose reference frame. Defaults to global "world" frame.
+geometry_msgs/Pose initial_pose     # Initial entity pose.
+
+---
+
+bool success                        # Return true if spawned successfully.
+string status_message               # Spawned entity full name (with namespace) on success or user-ready error message.
