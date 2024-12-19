@@ -13,4 +13,5 @@ geometry_msgs/Pose initial_pose     # Initial entity pose.
 ---
 
 bool success                        # Return true if spawned successfully.
-string status_message               # Spawned entity full name (with namespace) on success or user-ready error message.
+string status_message               # On failure, a user-friendly error message.
+string unique_name                  # Spawned entity full name (with namespace).

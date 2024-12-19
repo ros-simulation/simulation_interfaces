@@ -4,4 +4,4 @@
 ---
 
 bool success                        # Return true if successful.
-string status_message               # Additional comments or error status..
+string status_message               # Additional comments or error status.

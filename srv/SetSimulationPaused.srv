@@ -6,4 +6,4 @@ bool pause                          # If true, sets simulation state to paused, 
 ---
 
 bool success                        # Return true if pausing / resuming was successful.
-string status_message               # Additional comments or error status..
+string status_message               # Additional comments or error status.
