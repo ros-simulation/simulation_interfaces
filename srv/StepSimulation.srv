@@ -1,0 +1,10 @@
+# If simulation is paused, take N steps and pause it back. The service only returns once stepping is complete, which
+# might take considerable time.
+
+uint16 steps                        # Step through the simulation loop this many times.
+
+---
+
+bool success                        # Return true if stepping is supported and was successful.
+string status_message               # Additional comments or error status.
+                                    # Calling with simulation not paused will return failure and an appropriate message.

@@ -34,6 +34,7 @@ set(srv_files
     "srv/SetEntityState.srv"
     "srv/SetSimulationPaused.srv"
     "srv/SpawnEntity.srv"
+    "srv/StepSimulation.srv"
 )
 
 rosidl_generate_interfaces(${PROJECT_NAME}
