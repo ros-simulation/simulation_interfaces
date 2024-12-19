@@ -1,10 +1,12 @@
 # Get objects in the scene which can be interacted, e.g. with using SetEntityState.
 
 string filter                                       # Optional, defaults to empty. Return entities with matching names.
+                                                    # Entities containing a case-sensitive filter substring are returned.
+                                                    # An empty filter will result in all entities being returned.
 
 ---
 
-Entity[] entities                                   # All entities with names matching the filter, poses and twists.
+EntityWithState[] entities                          # All entities with their states, matching the filter.
 
 bool success                                        # Return true if successful.
 string status_message                               # Additional comments or error status.
