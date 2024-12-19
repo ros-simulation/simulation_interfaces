@@ -1,7 +1,7 @@
 # Get objects in the scene which can be interacted, e.g. with using SetEntityState.
 
 string filter                                       # Optional, defaults to empty. Return entities with matching names.
-                                                    # Entities containing a case-sensitive filter substring are returned.
+                                                    # Entity names are matched with the filter regular expression.
                                                     # An empty filter will result in all entities being returned.
 
 ---
