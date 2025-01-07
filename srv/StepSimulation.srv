@@ -1,5 +1,6 @@
 # If simulation is paused, take N steps and pause it back. The service only returns once stepping is complete, which
 # might take considerable time.
+# There is an alternative in MultiStepSimulation action, which is worth considering for a multi-step interface.
 
 uint16 steps                        # Step through the simulation loop this many times.
 

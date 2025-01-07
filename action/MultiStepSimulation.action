@@ -1,4 +1,5 @@
 # If simulation is paused, take N steps and pause it back. The action returns feedback after each complete step.
+# For a service alternative, see StepSimulation, which often makes more sense when doing a single step (steps = 1).
 
 uint16 steps                        # Action goal: step through the simulation loop this many times.
 ---
