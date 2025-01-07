@@ -1,0 +1,9 @@
+# If simulation is paused, take N steps and pause it back. The action returns feedback after each complete step.
+
+uint16 steps                        # Action goal: step through the simulation loop this many times.
+---
+bool success                        # Return true if stepping is supported and was successful.
+string status_message               # Additional comments or error status.
+                                    # Calling with simulation not paused will return failure and an appropriate message.
+---
+uint16 completed_steps              # Action feedback: number of completed steps so far.
