@@ -28,6 +28,7 @@ set(srv_files
     "srv/DeleteEntity.srv"
     "srv/GetEntities.srv"
     "srv/GetEntityState.srv"
+    "srv/GetSimulatorFeatures.srv"
     "srv/GetSpawnables.srv"
     "srv/GetSpawnPoses.srv"
     "srv/ResetSimulation.srv"
