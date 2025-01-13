@@ -1,4 +1,5 @@
-# If simulation is paused, take N steps and pause it back. The action returns feedback after each complete step.
+# Assuming the simulation is paused, simulate a finite number of steps and return to paused state. 
+# The action returns feedback after each complete step.
 # For a service alternative, see StepSimulation, which often makes more sense when doing a single step (steps = 1).
 
 uint16 steps                        # Action goal: step through the simulation loop this many times.
@@ -7,4 +8,4 @@ bool success                        # Return true if stepping is supported and w
 string status_message               # Additional comments or error status.
                                     # Calling with simulation not paused will return failure and an appropriate message.
 ---
-uint16 completed_steps              # Action feedback: number of completed steps so far.
+uint16 completed_steps              # Action feedback: number of completed steps in this action so far.
