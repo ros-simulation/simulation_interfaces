@@ -1,4 +1,4 @@
-# Get state of an object. Valid objects are on the list returned by GetEntities.
+# Get state of an entity.
 
 string name                                             # Unique name as returned by GetEntities / SpawnEntity.
 
