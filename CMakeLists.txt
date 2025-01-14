@@ -19,6 +19,7 @@ set(msg_files
     "msg/Entity.msg"
     "msg/EntityState.msg"
     "msg/EntityWithState.msg"
+    "msg/SimulatorFeatures.msg"
     "msg/Spawnable.msg"
     "msg/SpawnableBounds.msg"
     "msg/SpawnPose.msg"
