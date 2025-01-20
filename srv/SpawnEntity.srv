@@ -6,7 +6,7 @@ string name                         # Suggest a name to give to the spawned enti
 string uri                          # Resource such as SDF or URDF file, or in native format such as prefab.
                                     # Valid URIs can be determined by calling GetSpawnables first,
                                     # if the feature is supported by your simulator.
-string entity_namespace             # Spawn robot or another object with all its interfaces under this namespace.
+string entity_namespace             # Spawn the entity with all its interfaces under this namespace.
 string reference_frame              # Optional initial pose reference frame. Defaults to global "world" frame.
                                     # This ROS frame must be known to the simulator, e.g. of an object spawned earlier.
 geometry_msgs/Pose initial_pose     # Initial entity pose. Simulators should spawn the entity with its top-level link
