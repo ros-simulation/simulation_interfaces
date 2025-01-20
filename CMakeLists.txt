@@ -19,19 +19,19 @@ set(msg_files
     "msg/Entity.msg"
     "msg/EntityState.msg"
     "msg/EntityWithState.msg"
+    "msg/NamedPose.msg"
+    "msg/PoseBounds.msg"
     "msg/SimulatorFeatures.msg"
     "msg/Spawnable.msg"
-    "msg/SpawnableBounds.msg"
-    "msg/SpawnPose.msg"
 )
 
 set(srv_files
     "srv/DeleteEntity.srv"
     "srv/GetEntities.srv"
     "srv/GetEntityState.srv"
+    "srv/GetNamedPoses.srv"
     "srv/GetSimulatorFeatures.srv"
     "srv/GetSpawnables.srv"
-    "srv/GetSpawnPoses.srv"
     "srv/ResetSimulation.srv"
     "srv/SetEntityState.srv"
     "srv/SetSimulationPaused.srv"

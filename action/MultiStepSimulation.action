@@ -2,10 +2,10 @@
 # The action returns feedback after each complete step.
 # For a service alternative, see StepSimulation, which often makes more sense when doing a single step (steps = 1).
 
-uint16 steps                        # Action goal: step through the simulation loop this many times.
+uint64 steps                        # Action goal: step through the simulation loop this many times.
 ---
 bool success                        # Return true if stepping is supported and was successful.
 string status_message               # Additional comments or error status.
                                     # Calling with simulation not paused will return failure and an appropriate message.
 ---
-uint16 completed_steps              # Action feedback: number of completed steps in this action so far.
+uint64 completed_steps              # Action feedback: number of completed steps in this action so far.

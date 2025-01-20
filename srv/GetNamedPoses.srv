@@ -1,0 +1,10 @@
+# Get predefined poses which are convenient to for spawning, navigation goals etc.
+# This is an optional simulation feature: check status_message if you receive an empty poses vector,
+# to determine whether this feature is not supported by your simulator, or named poses are simply not defined.
+
+---
+
+NamedPose[] poses                                   # A list of predefined poses, which may be empty.
+
+bool success                                        # Return true if successful.
+string status_message                               # Additional comments or error status.

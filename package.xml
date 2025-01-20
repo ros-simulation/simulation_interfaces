@@ -3,7 +3,7 @@
 <package format="3">
   <name>simulation_interfaces</name>
   <version>1.0.0</version>
-  <description>A package containing simulation interfaces including messages and services</description>
+  <description>A package containing simulation interfaces including messages, services and actions</description>
   <maintainer email="adam.dabrowski@robotec.ai">Adam Dabrowski</maintainer>
   <license>Apache License 2.0</license>
   <url type="repository">https://github.com/ros-simulation/simulation-interfaces</url>

@@ -1,4 +1,5 @@
-# Entity with its current ground truth state
+# Entity with its current ground truth state. Entities are objects in the simulation such as models and links.
+# Each simulator might define what an entity is in a (slightly) different way.
 
 Entity entity                               # Entity name and description
 EntityState state                           # Entity current state

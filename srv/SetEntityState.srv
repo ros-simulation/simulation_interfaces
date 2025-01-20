@@ -2,6 +2,7 @@
 
 string name                             # Unique name as returned by GetEntities or SpawnEntity.
 EntityState state                       # New state to set immediately. The timestamp in header is ignored.
+                                        # Note that the acceleration field may be ignored by simulators.
 
 ---
 
