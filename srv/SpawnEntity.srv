@@ -17,9 +17,9 @@ string uri                              # Resource such as SDFormat, URDF, USD o
 string resource_string                  # An entity definition file passed as a string.
                                         # Simulators may support spawning from a file generated on the fly (e.g. XACRO).
                                         # Check whether it is supported by your simulator through GetSimulatorFeatures.
+                                        # If uri field is not empty, resource_string field will be ignored.
 string entity_namespace                 # Spawn the entity with all its interfaces under this namespace.
-geometry_msgs/PoseStamped initial_pose  # Initial entity pose. Simulators will spawn the entity with its top-level link
-                                        # transform matching this pose.
+geometry_msgs/PoseStamped initial_pose  # Initial entity pose.
                                         # The header contains a reference frame, which defaults to global "world" frame.
                                         # This frame must be known to the simulator, e.g. of an object spawned earlier.
                                         # The timestamp field in the header is ignored.
