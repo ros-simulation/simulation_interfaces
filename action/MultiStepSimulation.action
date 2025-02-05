@@ -8,4 +8,5 @@ bool success                        # Return true if stepping is supported and w
 string status_message               # Additional comments or error status.
                                     # Calling with simulation not paused will return failure and an appropriate message.
 ---
-uint64 completed_steps              # Action feedback: number of completed steps in this action so far.
+uint64 completed_steps              # number of completed steps in this action so far.
+uint64 remaining_steps              # number of steps remaining to be completed in this action.
