@@ -4,5 +4,4 @@ string name                         # Unique name with a namespace, as returned 
 
 ---
 
-bool success                        # return true if deleted successfully.
-string status_message               # On failure, a user-friendly error message.
+Result result

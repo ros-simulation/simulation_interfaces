@@ -6,4 +6,4 @@ string[] tags                             # Optional tags which can be used to d
                                           # purpose, for example: "spawn", "parking", "navigation_goal",
                                           # as well as fitting entity types e.g. "drone", "turtlebot3".
 geometry_msgs/Pose pose                   # Pose relative to world, which can be used with SpawnEntity.srv.
-PoseBounds bounds                         # Optional pose area bounds.
+PoseBounds bounds                         # Pose area bounds, which are empty by default, meaning pose is unbounded.

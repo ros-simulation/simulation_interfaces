@@ -1,17 +1,16 @@
 # Reset the simulation to the start, including the entire scene and the simulation time.
 # Objects that were dynamically spawned are de-spawned.
 
-uint8 DEFAULT=0                     # same as ALL.
-uint8 TIME=1                        # Reset simulation time to start.
-uint8 STATE=2                       # Reset state such as poses and velocities. This may include state randomization
+uint8 DEFAULT       = 0             # same as ALL.
+uint8 TIME          = 1             # Reset simulation time to start.
+uint8 STATE         = 2             # Reset state such as poses and velocities. This may include state randomization
                                     # if such feature is available and turned on.
-uint8 SPAWNED=4                     # De-spawns all spawned entities.
-uint8 ALL=7                         # Fully resets simulation to the start, as if it was closed and launched again.
+uint8 SPAWNED       = 4             # De-spawns all spawned entities.
+uint8 ALL           = 7             # Fully resets simulation to the start, as if it was closed and launched again.
 
 uint8 reset_scope                   # Scope of the reset. Note that simulators might only support some types of resets.
                                     # This is a bit field which you can check for each scope e.g. reset_scope & TIME.
 
 ---
 
-bool success                        # Return true if successful.
-string status_message               # Additional comments or error status, such as what reset types are supported.
+Result result

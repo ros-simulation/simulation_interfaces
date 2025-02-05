@@ -16,11 +16,12 @@ find_package(rosidl_default_generators REQUIRED)
 find_package(std_msgs REQUIRED)
 
 set(msg_files
-    "msg/Entity.msg"
+    "msg/EntityInfo.msg"
     "msg/EntityState.msg"
     "msg/EntityWithState.msg"
     "msg/NamedPose.msg"
     "msg/PoseBounds.msg"
+    "msg/Result.msg"
     "msg/SimulatorFeatures.msg"
     "msg/Spawnable.msg"
 )

@@ -6,5 +6,4 @@ EntityState state                       # New state to set immediately. The time
 
 ---
 
-bool success                            # Return true if successful.
-string status_message                   # Additional comments or error status.
+Result result

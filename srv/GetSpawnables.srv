@@ -1,17 +1,16 @@
 # Return a list of resources which are valid as SpawnEntity uri fields (e.g. visible to or registered in simulator).
-# This interface is an optional extension and might not be implemented by your simulator, check the status_message.
+# This interface is an optional extension and might not be implemented by your simulator, check the result_code.
 
----
-
-Spawnable[] spawnables                              # Spawnable objects with URI and additional information.
 string[] sources                                    # Optional field for additional sources (local or remote) to search.
                                                     # By default, each simulator has visibility of spawnables through
                                                     # some mechanisms, e.g. a set of paths, registered assets etc.
                                                     # Since the simulator cannot possibly look everywhere,
                                                     # this field allows the user to specify additional sources.
-                                                    # Unrecognized values are listed as such in the status_message,
+                                                    # Unrecognized values are listed as such in the result.error_message,
                                                     # but do not hinder success of the response.
                                                     # Sources may include subcategories and be simulator-specific.
 
-bool success                                        # Return true if successful.
-string status_message                               # Additional comments or error status.
+---
+
+Result result
+Spawnable[] spawnables                              # Spawnable objects with URI and additional information.

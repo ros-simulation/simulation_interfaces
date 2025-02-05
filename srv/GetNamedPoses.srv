@@ -4,7 +4,5 @@
 
 ---
 
+Result result
 NamedPose[] poses                                   # A list of predefined poses, which may be empty.
-
-bool success                                        # Return true if successful.
-string status_message                               # Additional comments or error status.

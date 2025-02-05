@@ -4,7 +4,5 @@ string name                                             # Unique name as returne
 
 ---
 
-EntityState entity_state                                # Entity ground truth state.
-
-bool success                                            # Return true if successful.
-string status_message                                   # Additional comments or error status.
+Result result
+EntityState state                                       # Entity ground truth state. Valid when result.result = OK.
