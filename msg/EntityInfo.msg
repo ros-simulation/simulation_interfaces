@@ -10,5 +10,5 @@ uint8 STATIC_OBJECT  = 5    # Any object which is static, e.g. not supposed to c
                             # unless by means of SetEntityState.
 
 uint8 category              # Major category for the entity. Extra entity type distinction can be made through tags.
-string description          # optional: verbose, human-readable description of the entity. Can be used for LLMs.
+string description          # optional: verbose, human-readable description of the entity.
 string[] tags               # optional: tags which are useful for filtering and categorizing entities further.

@@ -2,7 +2,7 @@
 # Note that additional results for specific services can defined within them using values above 100.
 
 uint8 FEATURE_UNSUPPORTED   = 0       # Feature is not supported by the simulator, check GetSimulatorFeatures.
-                                      # While feature support can sometimes be deducted by last of corresponding
+                                      # While feature support can sometimes be deduced from presence of corresponding
                                       # service / action interface, in other cases it is about supporting certain call
                                       # parameters, formats and options within interface call.
 uint8 OK                    = 1
