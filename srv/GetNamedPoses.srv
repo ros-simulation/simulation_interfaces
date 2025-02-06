@@ -2,6 +2,9 @@
 # This is an optional simulation feature: check status_message if you receive an empty poses vector,
 # to determine whether this feature is not supported by your simulator, or named poses are simply not defined.
 
+TagsFilter tags                                     # Tags filter to apply. Only named poses with matching tags field
+                                                    # will be returned. Can be empty (see TagsFilter).
+
 ---
 
 Result result

@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.8)
+cmake_minimum_required(VERSION 3.16)
 project(simulation_interfaces)
 
 if(NOT CMAKE_CXX_STANDARD)
@@ -16,6 +16,7 @@ find_package(rosidl_default_generators REQUIRED)
 find_package(std_msgs REQUIRED)
 
 set(msg_files
+    "msg/EntityCategories.msg"
     "msg/EntityInfo.msg"
     "msg/EntityState.msg"
     "msg/EntityWithState.msg"
@@ -24,6 +25,7 @@ set(msg_files
     "msg/Result.msg"
     "msg/SimulatorFeatures.msg"
     "msg/Spawnable.msg"
+    "msg/TagsFilter.msg"
 )
 
 set(srv_files

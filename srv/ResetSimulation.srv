@@ -6,10 +6,10 @@ uint8 TIME          = 1             # Reset simulation time to start.
 uint8 STATE         = 2             # Reset state such as poses and velocities. This may include state randomization
                                     # if such feature is available and turned on.
 uint8 SPAWNED       = 4             # De-spawns all spawned entities.
-uint8 ALL           = 255             # Fully resets simulation to the start, as if it was closed and launched again.
+uint8 ALL           = 255           # Fully resets simulation to the start, as if it was closed and launched again.
 
 uint8 reset_scope                   # Scope of the reset. Note that simulators might only support some types of resets.
-                                    # This is a bit field which you can check for each scope e.g. reset_scope & TIME.
+                                    # This is a bit field which may be checked for each scope e.g. reset_scope & TIME.
 
 ---
 

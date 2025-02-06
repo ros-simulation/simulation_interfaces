@@ -8,18 +8,10 @@ uint8[] categories                                  # Optional, defaults to empt
                                                     # Entities matching any of the categories will be returned.
                                                     # To get entity category, use GetEntityInfo.
                                                     # Applies together with other filters (filter, tags).
-string[] tags                                       # Optional, defaults to empty, which means no tags filter.
-                                                    # Entities matching any or all of tags will be returned, depending
-                                                    # on tags_filter_mode. To get entity tags, use GetEntityInfo.
+TagsFilter tags                                     # Tags filter to apply. To get entity tags, use GetEntityInfo.
                                                     # Applies together with other filters (filter, categories).
-
-uint8 ANY_OF    = 0                                 # Filter with AND mode (all tags need to match).
-uint8 ALL_OF    = 1                                 # Filter with OR mode (any tag can match).
-
-uint8 tags_filter_mode                              # Set to control filter application for tags.
-
 
 ---
 
 Result result
-EntityWithState[] entities                          # All entities with their states, matching the filter.
+EntityWithState[] entities                          # All entities with their states, matching the filters.
