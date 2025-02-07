@@ -1,6 +1,5 @@
-# Get objects in the scene which can be interacted with, e.g. with using SetEntityState.
-# You can get further information about entities through GetEntityInfo and GetEntityState services.
-# There is also a GetEntitiesStates service if you would like to get state for each entity.
+# Get objects in the scene which can be interacted, e.g. with using SetEntityState.
+# Use GetEntities service instead if EntityState information for all entities is not needed.
 
 EntityFilters filters                               # Optional filters for the query, including name, category, tags,
                                                     # and overlap filters.
@@ -9,3 +8,4 @@ EntityFilters filters                               # Optional filters for the q
 
 Result result
 Entity[] entities                                   # All entities matching the filters.
+EntityState[] states                                # States for these entities.

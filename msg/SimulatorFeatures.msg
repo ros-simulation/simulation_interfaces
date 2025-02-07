@@ -3,8 +3,9 @@
 uint8 SPAWNING                  = 0      # Supports spawn interface (SpawnEntity).
 uint8 DELETING                  = 1      # Supports deleting entities (DeleteEntity).
 uint8 NAMED_POSES               = 2      # Supports predefined named poses (GetNamedPoses).
-uint8 POSE_BOUNDS               = 3      # Supports pose bounds (PoseBounds).
-uint8 SPAWNING_RESOURCE_STRING  = 4      # Supports SpawnEntity resource_string field.
+uint8 POSE_BOUNDS               = 3      # Supports pose bounds (GetNamedPoseBounds).
+uint8 ENTITY_BOUNDS             = 4      # Supports entity bounds (GetEntityBounds).
+uint8 SPAWNING_RESOURCE_STRING  = 5      # Supports SpawnEntity resource_string field.
 
 uint8 ENTITY_STATE_LISTING      = 10      # Supports GetEntityState interface.
 uint8 ENTITY_STATE_SETTING      = 11      # Supports SetEntityState interface.

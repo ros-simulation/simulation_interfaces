@@ -2,4 +2,4 @@
 
 string uri                                # URI which will be accepted by SpawnEntity service.
 string description                        # Optional description for the user, e.g. "robot X with sensors A,B,C".
-PoseBounds spawn_bounds                   # Optional spawn area bounds which fully encompass this object.
+Bounds spawn_bounds                       # Optional spawn area bounds which fully encompass this object.

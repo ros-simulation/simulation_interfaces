@@ -16,12 +16,13 @@ find_package(rosidl_default_generators REQUIRED)
 find_package(std_msgs REQUIRED)
 
 set(msg_files
+    "msg/Bounds.msg"
+    "msg/Entity.msg"
     "msg/EntityCategories.msg"
+    "msg/EntityFilters.msg"
     "msg/EntityInfo.msg"
     "msg/EntityState.msg"
-    "msg/EntityWithState.msg"
     "msg/NamedPose.msg"
-    "msg/PoseBounds.msg"
     "msg/Result.msg"
     "msg/SimulatorFeatures.msg"
     "msg/Spawnable.msg"
@@ -31,7 +32,11 @@ set(msg_files
 set(srv_files
     "srv/DeleteEntity.srv"
     "srv/GetEntities.srv"
+    "srv/GetEntitiesStates.srv"
+    "srv/GetEntityBounds.srv"
+    "srv/GetEntityInfo.srv"
     "srv/GetEntityState.srv"
+    "srv/GetNamedPoseBounds.srv"
     "srv/GetNamedPoses.srv"
     "srv/GetSimulatorFeatures.srv"
     "srv/GetSpawnables.srv"
