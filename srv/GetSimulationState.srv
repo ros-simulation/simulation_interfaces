@@ -1,0 +1,7 @@
+# Gets the simulation state (paused, playing, stopped)
+
+---
+
+SimulationState state                      # Current state of the simulation.
+
+Result result

@@ -1,6 +1,6 @@
 # Get geometrical bounds for entity. This feature is available if GetSimulatorFeatures includes ENTITY_BOUNDS feature.
 
-string name                           # Unique name as returned by GetEntities / SpawnEntity.
+Entity entity                         # Entity identified by its unique name as returned by GetEntities / SpawnEntity.
 
 ---
 

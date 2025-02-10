@@ -1,6 +1,7 @@
-# Remove an entity (a robot, other object) by unique name from the simulation
+# Remove an entity (a robot, other object) from the simulation
 
-string name                         # Unique name with a namespace, as returned by SpawnEntity or GetEntities.
+Entity entity                         # Entity identified by its unique name with a namespace,
+                                      # as returned by SpawnEntity or GetEntities.
 
 ---
 
