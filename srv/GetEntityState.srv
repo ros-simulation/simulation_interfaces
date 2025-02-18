@@ -1,0 +1,8 @@
+# Get state of an entity.
+
+Entity entity                         # Entity identified by its unique name as returned by GetEntities / SpawnEntity.
+
+---
+
+Result result
+EntityState state                     # Entity ground truth state. Valid when result.result = OK.

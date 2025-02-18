@@ -1,0 +1,11 @@
+# Get objects in the scene which can be interacted, e.g. with using SetEntityState.
+# Use GetEntities service instead if EntityState information for all entities is not needed.
+
+EntityFilters filters                               # Optional filters for the query, including name, category, tags,
+                                                    # and overlap filters.
+
+---
+
+Result result
+Entity[] entities                                   # All entities matching the filters.
+EntityState[] states                                # States for these entities.
