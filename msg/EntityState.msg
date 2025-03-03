@@ -1,6 +1,6 @@
 # Entity current pose, twist and acceleration
 
-std_msgs/Header header                  # Frame and timestamp for pose and twist. Empty frame defaults to world.
+std_msgs/Header header                  # Reference frame and timestamp for pose and twist. Empty frame defaults to world.
 geometry_msgs/Pose pose                 # Pose in reference frame, ground truth.
 geometry_msgs/Twist twist               # Ground truth linear and angular velocities
                                         # observed in the frame specified by header.frame_id

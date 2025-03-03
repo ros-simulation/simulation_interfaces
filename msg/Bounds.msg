@@ -11,14 +11,14 @@
 # before calling SpawnEntity, to avoid overlaps and unstable behavior.
 
 # bounds type
-uint8 BOX           = 0      # Bounding box, points field should have two values, which are
-                             # upper right and lower left corners of the box.
-uint8 CONVEX_HULL   = 1      # Points define a convex hull (at least 3 non-collinear points).
-uint8 SPHERE        = 2      # A sphere with center and radius. First element of points vector is the center.
-                             # The x field of the second point of the vector is the radius (y and z values are ignored).
+uint8 TYPE_BOX           = 0      # Bounding box, points field should have two values, which are
+                                  # upper right and lower left corners of the box.
+uint8 TYPE_CONVEX_HULL   = 1      # Points define a convex hull (at least 3 non-collinear points).
+uint8 TYPE_SPHERE        = 2      # A sphere with center and radius. First element of points vector is the center.
+                                  # The x field of the second point of the vector is the radius (y and z values are ignored).
 
 
-uint8 type                               # See type value documentation.
+uint8 type
 geometry_msgs/Vector3[] points           # Points defining the bounded area. Check type field to determine semantics.
                                          # Valid sizes are zero (no bounds), 2 (sphere or box, depending on type field),
                                          # and 3 or more (convex hull).
