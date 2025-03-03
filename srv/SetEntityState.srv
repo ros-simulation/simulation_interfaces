@@ -1,6 +1,6 @@
 # Set a state of an object, which will result in an instant change in its pose and/or twist.
 
-Entity entity                           # Entity identified by its unique name as returned by GetEntities / SpawnEntity.
+string entity                           # Entity identified by its unique name as returned by GetEntities / SpawnEntity.
 EntityState state                       # New state to set immediately. The timestamp in header is ignored.
                                         # Note that the acceleration field may be ignored by simulators.
 

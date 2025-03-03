@@ -1,6 +1,6 @@
 # Get type and other information about an entity.
 
-Entity entity                         # Entity identified by its unique name as returned by GetEntities / SpawnEntity.
+string entity                         # Entity identified by its unique name as returned by GetEntities / SpawnEntity.
 
 ---
 

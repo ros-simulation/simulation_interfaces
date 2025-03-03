@@ -17,7 +17,6 @@ find_package(std_msgs REQUIRED)
 
 set(msg_files
     "msg/Bounds.msg"
-    "msg/Entity.msg"
     "msg/EntityCategories.msg"
     "msg/EntityFilters.msg"
     "msg/EntityInfo.msg"
@@ -50,7 +49,7 @@ set(srv_files
 )
 
 set(action_files
-    "action/MultiStepSimulation.action"
+    "action/SimulateSteps.action"
 )
 
 rosidl_generate_interfaces(${PROJECT_NAME}

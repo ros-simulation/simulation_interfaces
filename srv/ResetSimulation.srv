@@ -8,8 +8,8 @@ uint8 SCOPE_STATE         = 2             # Reset state such as poses and veloci
 uint8 SCOPE_SPAWNED       = 4             # De-spawns all spawned entities.
 uint8 SCOPE_ALL           = 255           # Fully resets simulation to the start, as if it was closed and launched again.
 
-uint8 scope                               # Scope of the reset. Note that simulators might only support some types of resets.
-                                    # This is a bit field which may be checked for each scope e.g. reset_scope & TIME.
+uint8 scope                               # Scope of the reset. Note that simulators might only support some scopes.
+                                          # This is a bit field which may be checked for each scope e.g. scope & TIME.
 
 ---
 
