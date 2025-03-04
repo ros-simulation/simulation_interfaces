@@ -7,5 +7,5 @@ EntityFilters filters                               # Optional filters for the q
 ---
 
 Result result
-Entity[] entities                                   # All entities matching the filters.
+string[] entities                                   # Unique names of all entities matching the filters.
 EntityState[] states                                # States for these entities.
