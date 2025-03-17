@@ -12,8 +12,8 @@
 
 # bounds type
 uint8 TYPE_EMPTY         = 0      # No bounds. The points vector will be empty.
-uint8 TYPE_BOX           = 1      # Bounding box, points field should have two values, which are
-                                  # upper right and lower left corners of the box.
+uint8 TYPE_BOX           = 1      # Axis-aligned bounding box, points field should have two values,
+                                  # which are upper right and lower left corners of the box.
 uint8 TYPE_CONVEX_HULL   = 2      # Points define a convex hull (at least 3 non-collinear points).
 uint8 TYPE_SPHERE        = 3      # A sphere with center and radius. First element of points vector is the center.
                                   # The x field of the second point of the vector is the radius (y and z are ignored).
