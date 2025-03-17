@@ -1,6 +1,6 @@
 # Get bounds for the named pose. This feature is available if GetSimulatorFeatures includes POSE_BOUNDS feature.
 
-string name                                         # unique names (as returned from GetNamedPoses).
+string name                                         # unique name (as returned from GetNamedPoses).
 
 ---
 

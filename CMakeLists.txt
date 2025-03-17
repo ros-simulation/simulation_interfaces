@@ -17,7 +17,7 @@ find_package(std_msgs REQUIRED)
 
 set(msg_files
     "msg/Bounds.msg"
-    "msg/EntityCategories.msg"
+    "msg/EntityCategory.msg"
     "msg/EntityFilters.msg"
     "msg/EntityInfo.msg"
     "msg/EntityState.msg"
@@ -42,6 +42,7 @@ set(srv_files
     "srv/GetSimulatorFeatures.srv"
     "srv/GetSpawnables.srv"
     "srv/ResetSimulation.srv"
+    "srv/SetEntityInfo.srv"
     "srv/SetEntityState.srv"
     "srv/SetSimulationState.srv"
     "srv/SpawnEntity.srv"

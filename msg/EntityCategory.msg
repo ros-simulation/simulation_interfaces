@@ -1,4 +1,5 @@
-# Constants for entity categories
+# Entity major category, which often warrants a specific way to handle such entity, e.g. when handling humans
+# or mapping persistence for dynamic vs static objects.
 
 uint8 OBJECT         = 0    # Generic or unspecified type.
 uint8 ROBOT          = 1    # A broad category for mobile robots, arms, drones etc., usually with ROS 2 interfaces.
@@ -8,3 +9,5 @@ uint8 DYNAMIC_OBJECT = 4    # Vehicles, animals, mobile obstacles, typically to 
                             # such as when simulation is used to test robot perception or navigation stack.
 uint8 STATIC_OBJECT  = 5    # Any object which is static, e.g. not supposed to change its pose
                             # unless by means of SetEntityState.
+
+uint8 category

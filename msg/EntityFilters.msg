@@ -6,7 +6,7 @@ string filter                                       # Optional, defaults to empt
                                                     # The regular expression syntax is POSIX Extended,
                                                     # see https://pubs.opengroup.org/onlinepubs/9799919799/ definitions.
                                                     # Applies together with other filters (categories, tags).
-uint8[] categories                                  # Optional, defaults to empty, which means no category filter.
+EntityCategory[] categories                         # Optional, defaults to empty, which means no category filter.
                                                     # Entities matching any of the categories will be returned.
                                                     # To get entity category, use GetEntityInfo.
                                                     # Applies together with other filters (filter, tags).

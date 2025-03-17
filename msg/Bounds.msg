@@ -6,7 +6,7 @@
 # For entities, these limits are relative to entity's top link transform, following ROS rep-103 convention.
 
 # As bounds are optional in most interfaces, TYPE_EMPTY signifies empty bounds, to be understood as "unbounded".
-# Otherwise, the fields are expected to define a valid area containing the (0,0,0) point which is the position.
+# Otherwise, the fields are expected to define a valid volume.
 # For spawning with a named pose, you should check whether the entity simulation model fits within the bounds
 # before calling SpawnEntity, to avoid overlaps and unstable behavior.
 

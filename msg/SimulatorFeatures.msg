@@ -11,6 +11,7 @@ uint8 SPAWNING_RESOURCE_STRING  = 7      # Supports SpawnEntity resource_string 
 
 uint8 ENTITY_STATE_LISTING      = 10      # Supports GetEntityState interface.
 uint8 ENTITY_STATE_SETTING      = 11      # Supports SetEntityState interface.
+uint8 ENTITY_INFO_SETTING       = 12      # Supports SetEntityInfo interface.
 
 uint8 SIMULATION_RESET          = 20      # Supports one or more ways to reset the simulation through ResetSimulation.
 uint8 SIMULATION_RESET_TIME     = 21      # Supports TIME flag for resetting.
