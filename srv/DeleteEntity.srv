@@ -1,4 +1,5 @@
-# Remove an entity (a robot, other object) from the simulation
+# Remove an entity (a robot, other object) from the simulation.
+# Support for this interface is indicated through the DELETING value in GetSimulationFeatures.
 
 string entity                         # Entity identified by its unique name with a namespace,
                                       # as returned by SpawnEntity or GetEntities.

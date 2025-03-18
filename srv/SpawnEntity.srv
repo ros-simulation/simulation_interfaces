@@ -1,4 +1,5 @@
 # Spawn an entity (a robot, other object) by name or URI
+# Support for this interface is indicated through the SPAWNING value in GetSimulationFeatures.
 
 string name                             # A name to give to the spawned entity.
                                         # If empty, a name field in the uri file or resource_string will be used,
@@ -16,7 +17,8 @@ string uri                              # Resource such as SDFormat, URDF, USD o
                                         # If uri field is empty, resource_string must not be empty.
 string resource_string                  # An entity definition file passed as a string.
                                         # Simulators may support spawning from a file generated on the fly (e.g. XACRO).
-                                        # Check whether it is supported by your simulator through GetSimulatorFeatures.
+                                        # It is supported by your simulator if GetSimulatorFeatures includes
+                                        # SPAWNING_RESOURCE_STRING feature.
                                         # If uri field is not empty, resource_string field will be ignored.
 string entity_namespace                 # Spawn the entity with all its interfaces under this namespace.
 geometry_msgs/PoseStamped initial_pose  # Initial entity pose.

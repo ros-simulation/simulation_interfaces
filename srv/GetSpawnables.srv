@@ -1,5 +1,6 @@
 # Return a list of resources which are valid as SpawnEntity uri fields (e.g. visible to or registered in simulator).
 # This interface is an optional extension and might not be implemented by your simulator, check the result_code.
+# Support for this interface is indicated through the SPAWNABLES value in GetSimulationFeatures.
 
 string[] sources                                    # Optional field for additional sources (local or remote) to search.
                                                     # By default, each simulator has visibility of spawnables through

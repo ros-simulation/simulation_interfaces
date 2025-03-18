@@ -1,4 +1,5 @@
 # Get predefined poses which are convenient to for spawning, navigation goals etc.
+# Support for this interface is indicated through the NAMED_POSES value in GetSimulationFeatures.
 
 TagsFilter tags                                     # Tags filter to apply. Only named poses with matching tags field
                                                     # will be returned. Can be empty (see TagsFilter).

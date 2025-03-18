@@ -3,7 +3,7 @@
 # Certain goals or points might be valid for a small object, but not suitable for a large one,
 # or a differently shaped one.
 # Bounds can be also checked to ensure certain scenario conditions are met.
-# For entities, these limits are relative to entity's top link transform, following ROS rep-103 convention.
+# For entities, these limits are relative to entity's canonical link transform, following ROS rep-103 convention.
 
 # As bounds are optional in most interfaces, TYPE_EMPTY signifies empty bounds, to be understood as "unbounded".
 # Otherwise, the fields are expected to define a valid volume.
