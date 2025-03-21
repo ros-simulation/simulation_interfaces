@@ -1,0 +1,18 @@
+# Reset the simulation to the start, including the entire scene and the simulation time.
+# Objects that were dynamically spawned are de-spawned.
+# Support for this interface is indicated through the SIMULATION_RESET value in GetSimulationFeatures,
+# and supported scopes are further detailed by SIMULATION_RESET_TIME, SIMULATION_RESET_STATE, and SIMULATION_RESET_SPAWNED.
+
+uint8 SCOPE_DEFAULT       = 0             # same as SCOPE_ALL.
+uint8 SCOPE_TIME          = 1             # Reset simulation time to start.
+uint8 SCOPE_STATE         = 2             # Reset state such as poses and velocities. This may include state randomization
+                                          # if such feature is available and turned on.
+uint8 SCOPE_SPAWNED       = 4             # De-spawns all spawned entities.
+uint8 SCOPE_ALL           = 255           # Fully resets simulation to the start, as if it was closed and launched again.
+
+uint8 scope                               # Scope of the reset. Note that simulators might only support some scopes.
+                                          # This is a bit field which may be checked for each scope e.g. scope & SCOPE_TIME.
+
+---
+
+Result result

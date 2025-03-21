@@ -1,0 +1,13 @@
+# Assuming the simulation is paused, simulate a finite number of steps and return to paused state. 
+# The action returns feedback after each complete step.
+# For a service alternative, see StepSimulation, which often makes more sense when doing a single step (steps = 1).
+# Support for this interface is indicated through the STEP_SIMULATION_ACTION value in GetSimulationFeatures.
+
+uint64 steps                        # Action goal: step through the simulation loop this many times.
+---
+
+Result result                       # Calling with simulation unpaused will return OPERATION_FAILED and error message.
+
+---
+uint64 completed_steps              # number of completed steps in this action so far.
+uint64 remaining_steps              # number of steps remaining to be completed in this action.

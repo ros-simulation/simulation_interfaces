@@ -1,0 +1,16 @@
+# Change the simulation state
+# Support for this interface is indicated through the SIMULATION_STATE_SETTING value in GetSimulationFeatures.
+# Support for setting STATE_PAUSED is determined by SIMULATION_STATE_PAUSE feature.
+
+SimulationState state                      # Target state to set for the simulation.
+
+---
+
+uint8 ALREADY_IN_TARGET_STATE   = 101      # Additional result type for this call, which means simulation was already in
+                                           # the target state (e.g. was already stopped when STATE_STOPPED was requested).
+uint8 STATE_TRANSITION_ERROR    = 102      # The simulator failed to transition to the target state. This might happen
+                                           # especially with the transition to STATE_PLAYING from STATE_STOPPED.
+                                           # See result.error_message for details.
+uint8 INCORRECT_TRANSITION      = 103      # Incorrect transition (pausing when in stopped state).
+
+Result result

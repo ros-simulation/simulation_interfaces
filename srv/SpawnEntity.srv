@@ -1,0 +1,48 @@
+# Spawn an entity (a robot, other object) by name or URI
+# Support for this interface is indicated through the SPAWNING value in GetSimulationFeatures.
+
+string name                             # A name to give to the spawned entity.
+                                        # If empty, a name field in the uri file or resource_string will be used,
+                                        # if supported and not empty (e.g. "name" field in SDFormat, URDF).
+                                        # If the name is still empty or not unique (as determined by the simulator),
+                                        # the service returns a generated name in the entity_name response field if the
+                                        # allow_renaming field is set to true. Otherwise, the service call fails and an
+                                        # error is returned.
+bool allow_renaming                     # Determines whether the spawning succeeds with a non-unique name.
+                                        # If it is set to true, the user should always check entity_name response field
+                                        # and use it for any further interactions.
+string uri                              # Resource such as SDFormat, URDF, USD or MJCF file, a native prefab, etc.
+                                        # Valid URIs can be determined by calling GetSpawnables first, and you can check
+                                        # the simulator format support by reading SimulatorFeatures spawn_formats field.
+                                        # If uri field is empty, resource_string must not be empty.
+string resource_string                  # An entity definition file passed as a string.
+                                        # Simulators may support spawning from a file generated on the fly (e.g. XACRO).
+                                        # It is supported by your simulator if GetSimulatorFeatures includes
+                                        # SPAWNING_RESOURCE_STRING feature.
+                                        # If uri field is not empty, resource_string field will be ignored.
+string entity_namespace                 # Spawn the entity with all its interfaces under this namespace.
+geometry_msgs/PoseStamped initial_pose  # Initial entity pose.
+                                        # The header contains a reference frame, which defaults to global "world" frame.
+                                        # This frame must be known to the simulator, e.g. of an object spawned earlier.
+                                        # The timestamp field in the header is ignored.
+
+---
+
+# Additional result.result_code values for this service. Check result.error_message for further details.
+uint8 NAME_NOT_UNIQUE       = 101       # Given name is already taken by entity and allow_renaming is false.
+uint8 NAME_INVALID          = 102       # Given name is invalid in the simulator (e.g. does not meet naming
+                                        # requirements such as allowed characters). This is also returned if name is
+                                        # empty and allow_renaming is false.
+uint8 UNSUPPORTED_FORMAT    = 103       # Format for uri or resource string is unsupported. Check supported formats
+                                        # through GetSimulatorFeatures service, in spawn_formats field.
+uint8 NO_RESOURCE           = 104       # Both uri and resource string are empty.
+uint8 NAMESPACE_INVALID     = 105       # Namespace does not meet namespace naming standards.
+uint8 RESOURCE_PARSE_ERROR  = 106       # Resource file or string failed to parse.
+uint8 MISSING_ASSETS        = 107       # At least one of resource assets (such as meshes) was not found.
+uint8 UNSUPPORTED_ASSETS    = 108       # At least one of resource assets (such as meshes) is not supported.
+uint8 INVALID_POSE          = 109       # initial_pose is invalid, such as when the quaternion is invalid or position
+                                        # exceeds simulator world bounds.
+
+Result result
+string entity_name                      # Spawned entity full name, guaranteed to be unique in the simulation.
+                                        # If allow_renaming is true, it may differ from the request name field.

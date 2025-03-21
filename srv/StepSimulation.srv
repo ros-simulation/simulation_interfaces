@@ -1,0 +1,11 @@
+# Assuming the simulation is paused, simulate a finite number of steps and return to paused state.
+# The service only returns once stepping is complete, which might take considerable time.
+# There is an alternative in SimulateSteps action, which is worth considering for a multi-step interface.
+# Support for this interface is indicated through the STEP_SIMULATION_SINGLE and STEP_SIMULATION_MULTIPLE values
+# in GetSimulationFeatures, for steps = 1 and steps > 1 correspondingly.
+
+uint64 steps 1                      # Step through the simulation loop this many times.
+
+---
+
+Result result                       # Calling with simulation not paused will return RESULT_OPERATION_FAILED and error message.

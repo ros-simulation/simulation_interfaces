@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>simulation_interfaces</name>
+  <version>1.0.0</version>
+  <description>A package containing simulation interfaces including messages, services and actions</description>
+  <maintainer email="adam.dabrowski@robotec.ai">Adam Dabrowski</maintainer>
+  <license>Apache License 2.0</license>
+  <url type="repository">https://github.com/ros-simulation/simulation-interfaces</url>
+  <author email="adam.dabrowski@robotec.ai">Adam Dabrowski</author>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <buildtool_depend>rosidl_default_generators</buildtool_depend>
+
+  <depend>builtin_interfaces</depend>
+  <depend>geometry_msgs</depend>
+  <depend>std_msgs</depend>
+
+  <exec_depend>rosidl_default_runtime</exec_depend>
+
+  <test_depend>ament_lint_common</test_depend>
+
+  <member_of_group>rosidl_interface_packages</member_of_group>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

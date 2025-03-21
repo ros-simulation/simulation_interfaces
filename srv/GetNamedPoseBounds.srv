@@ -1,0 +1,9 @@
+# Get bounds for the named pose. This feature is available if GetSimulatorFeatures includes POSE_BOUNDS feature.
+# Support for this interface is indicated through the POSE_BOUNDS value in GetSimulationFeatures.
+
+string name                                         # unique name (as returned from GetNamedPoses).
+
+---
+
+Result result
+Bounds bounds                                       # bounds for the named pose.

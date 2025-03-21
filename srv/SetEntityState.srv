@@ -1,0 +1,12 @@
+# Set a state of an object, which will result in an instant change in its pose and/or twist.
+# Support for this interface is indicated through the ENTITY_STATE_SETTING value in GetSimulationFeatures.
+
+string entity                           # Entity identified by its unique name as returned by GetEntities / SpawnEntity.
+EntityState state                       # New state to set immediately. The timestamp in header is ignored.
+                                        # If non-zero twist or acceleration is requested for static object, the service call
+                                        # fails and RESULT_OPERATION_FAILED is returned.
+                                        # Note that the acceleration field may be ignored by simulators.
+
+---
+
+Result result

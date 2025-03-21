@@ -1,0 +1,9 @@
+# Set type, tags and other information about an entity.
+# Support for this interface is indicated through the ENTITY_INFO_SETTING value in GetSimulationFeatures.
+
+string entity                         # Entity identified by its unique name as returned by GetEntities.
+EntityInfo info                       # EntityInfo to set to the entity, which will override its current values.
+
+---
+
+Result result

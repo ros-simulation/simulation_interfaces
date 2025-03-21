@@ -1,0 +1,11 @@
+# Get geometrical bounds for entity. This feature is available if GetSimulatorFeatures includes ENTITY_BOUNDS feature.
+# Support for this interface is indicated through the ENTITY_BOUNDS value in GetSimulationFeatures.
+
+string entity                         # Entity identified by its unique name as returned by GetEntities / SpawnEntity.
+
+---
+
+Result result
+Bounds bounds                         # Entity bounds. Only valid if result.result_code is OK.
+                                      # Bounds with TYPE_BOX should be returned, unless there is a configuration
+                                      # parameter for the simulator to control the type and it is set otherwise.

@@ -1,0 +1,12 @@
+# Get objects in the scene which can be interacted, e.g. with using SetEntityState.
+# Use GetEntities service instead if EntityState information for all entities is not needed.
+# Support for this interface is indicated through the ENTITY_STATE_GETTING value in GetSimulationFeatures.
+
+EntityFilters filters                               # Optional filters for the query, including name, category, tags,
+                                                    # and overlap filters.
+
+---
+
+Result result
+string[] entities                                   # Unique names of all entities matching the filters.
+EntityState[] states                                # States for these entities.

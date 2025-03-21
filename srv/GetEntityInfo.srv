@@ -1,0 +1,9 @@
+# Get type and other information about an entity.
+# Support for this interface is indicated through the ENTITY_INFO_GETTING value in GetSimulationFeatures.
+
+string entity                         # Entity identified by its unique name as returned by GetEntities.
+
+---
+
+Result result
+EntityInfo info                       # Only valid if result.result_code is OK.
