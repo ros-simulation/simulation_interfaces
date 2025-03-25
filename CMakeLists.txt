@@ -17,6 +17,8 @@ find_package(std_msgs REQUIRED)
 
 set(msg_files
     "msg/Bounds.msg"
+    "msg/Collision.msg"
+    "msg/Collisions.msg"
     "msg/EntityCategory.msg"
     "msg/EntityFilters.msg"
     "msg/EntityInfo.msg"
