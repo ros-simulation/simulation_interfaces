@@ -1,0 +1,7 @@
+# Unload the current simulation world
+
+# If true, existing dynamically spawned entities will remain
+bool keep_entities
+---
+# Standard result message
+simulation_interfaces/Result result 

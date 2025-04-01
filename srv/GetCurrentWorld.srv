@@ -1,0 +1,8 @@
+# Get information about the currently loaded world in the simulation
+
+---
+# Standard result message
+simulation_interfaces/Result result
+
+# Information about the currently loaded world
+simulation_interfaces/WorldResource world 

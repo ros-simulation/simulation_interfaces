@@ -1,0 +1,10 @@
+# Return a list of available world resources which are valid as LoadWorld uri fields
+
+# Optional field for additional sources (local or remote) to search
+string[] sources
+---
+# Standard result message
+simulation_interfaces/Result result
+
+# Available world resources with URI and additional information
+simulation_interfaces/WorldResource[] worlds 

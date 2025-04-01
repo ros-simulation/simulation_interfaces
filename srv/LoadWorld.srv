@@ -1,0 +1,23 @@
+# Load a simulation world from a file or resource
+
+# Resource such as SDF, URDF, USD, or MJCF world file
+string uri
+
+# World definition passed as a string
+string resource_string
+
+# If true, existing entities will be cleared before loading the new world
+bool clear_entities
+---
+# Error Codes
+uint8 UNSUPPORTED_FORMAT = 101 # Format for uri or resource string is unsupported
+uint8 NO_RESOURCE = 102 # Both uri and resource string are empty
+uint8 RESOURCE_PARSE_ERROR = 103 # Resource file or string failed to parse
+uint8 MISSING_ASSETS = 104 # At least one of resource assets (such as meshes) was not found
+uint8 UNSUPPORTED_ASSETS = 105 # At least one of resource assets (such as meshes) is not supported 
+
+# Standard result message
+simulation_interfaces/Result result
+
+# Information about the loaded world
+simulation_interfaces/WorldResource world
