@@ -1,4 +1,6 @@
 # Unload the current simulation world
+#
+# Support for this interface is indicated through the WORLD_UNLOADING value in GetSimulatorFeatures.
 
 # If true, existing dynamically spawned entities will remain
 bool keep_entities

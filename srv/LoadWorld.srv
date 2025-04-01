@@ -1,4 +1,9 @@
 # Load a simulation world from a file or resource
+#
+# Support for this interface is indicated through the WORLD_LOADING value in GetSimulatorFeatures.
+# Support for the resource_string field is indicated through the WORLD_LOADING_RESOURCE_STRING value in GetSimulatorFeatures.
+
+# Existing worlds will be unloaded before attempting to load a new one.
 
 # Resource such as SDF, URDF, USD, or MJCF world file
 string uri
