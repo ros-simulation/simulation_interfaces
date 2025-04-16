@@ -3,8 +3,8 @@ Changelog for package simulation_interfaces
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Initial release of the simulation_interfaces package.
 
-Forthcoming
------------
+1.0.0 (2025-04-16)
+------------------
 * Proposal for simulation interfaces (`#1 <https://github.com/ros-simulation/simulation_interfaces/issues/1>`_)
   Following `ros-infrastructure/rep#410 <https://github.com/ros-infrastructure/rep/issues/410>`_, this PR contains a first version of simulation interfaces.
   Co-authored-by: Martin Pecka <peci1@seznam.cz>
