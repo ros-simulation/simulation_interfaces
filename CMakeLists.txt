@@ -27,6 +27,7 @@ set(msg_files
     "msg/SimulatorFeatures.msg"
     "msg/Spawnable.msg"
     "msg/TagsFilter.msg"
+    "msg/WorldResource.msg"
 )
 
 set(srv_files
@@ -47,6 +48,10 @@ set(srv_files
     "srv/SetSimulationState.srv"
     "srv/SpawnEntity.srv"
     "srv/StepSimulation.srv"
+    "srv/LoadWorld.srv"
+    "srv/UnloadWorld.srv"
+    "srv/GetCurrentWorld.srv"
+    "srv/GetAvailableWorlds.srv"
 )
 
 set(action_files

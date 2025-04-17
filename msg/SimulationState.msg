@@ -13,4 +13,6 @@ uint8 STATE_QUITTING     = 3           # Closing the simulator application. Swit
                                        # Running simulation application is outside of the simulation interfaces as
                                        # there is no service to handle the call when the simulator is not up.
 
+uint8 STATE_INITIALIZING = 4           # Simulation resources are being loaded. The simulation is inactive 
+                                       # and cannot be started, stopped, or paused.
 uint8 state
