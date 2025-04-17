@@ -32,7 +32,7 @@ uint8 STEP_SIMULATION_MULTIPLE  = 32      # Supports multi-stepping through simu
 uint8 STEP_SIMULATION_ACTION    = 33      # Supports SimulateSteps action interface.
 
 uint8 WORLD_LOADING             = 40      # Supports LoadWorld interface
-uint8 WORLD_LOADING_RESOURCE_STRING = 41  # Supports LoadWorld resource_string field
+uint8 WORLD_LOADING_STRING      = 41      # Supports LoadWorld resource_string field
 uint8 WORLD_UNLOADING           = 42      # Supports UnloadWorld interface
 uint8 WORLD_INFO_GETTING        = 43      # Supports GetCurrentWorld interface
 uint8 AVAILABLE_WORLDS          = 44      # Supports GetAvailableWorlds interface

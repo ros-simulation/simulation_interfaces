@@ -1,12 +1,17 @@
-# Return a list of available world resources which are valid as LoadWorld uri fields
-#
+# Return a list of available world resources which can be used with LoadWorld.
 # Support for this interface is indicated through the AVAILABLE_WORLDS value in GetSimulatorFeatures.
 
-# Optional field for additional sources (local or remote) to search
+# Optional field for additional sources (local or remote) to search, 
+# specified as standard URIs if possible.
 string[] sources
----
-# Standard result message
-simulation_interfaces/Result result
 
-# Available world resources with URI and additional information
-simulation_interfaces/WorldResource[] worlds 
+# Only get worlds with tags matching the filter
+TagsFilter filter
+
+---
+
+# Standard result message
+Result result
+
+# Available world resources.
+WorldResource[] worlds 
