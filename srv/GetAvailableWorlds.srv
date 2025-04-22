@@ -5,7 +5,8 @@
 # specified as standard URIs if possible.
 string[] sources
 
-# Only get worlds with tags matching the filter
+# Only get worlds with tags matching the filter. The filter is optional and none by default.
+# This feature is supported if WORLD_TAGS feature is included in output of GetSimulatorFeatures.
 TagsFilter filter
 
 ---
