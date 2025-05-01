@@ -1,6 +1,6 @@
 # Load a simulation world from a file or resource.
 # Support for this interface is indicated through the WORLD_LOADING value in GetSimulatorFeatures.
-# Resource_string field support is indicated through the WORLD_RESOURCE_STRING value in GetSimulatorFeatures.
+# resource_string field support is indicated through the WORLD_RESOURCE_STRING value in GetSimulatorFeatures.
 # Currently loaded worlds will be unloaded before attempting to load a new one.
 # Any previously spawned entities will be removed.
 
