@@ -4,7 +4,7 @@
 # Currently loaded worlds will be unloaded before attempting to load a new one.
 # Any previously spawned entities will be removed.
 
-# Resource such as SDF, URDF, USD, MJCF, or other simulator-native format world file.
+# Resource such as SDF, USD, MJCF, or other simulator-native format world file.
 string uri
 
 # Simulation world passed as a string. This field is used if the uri field is empty.
