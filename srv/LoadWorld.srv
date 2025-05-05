@@ -1,4 +1,5 @@
 # Load a simulation world from a file or resource.
+# This means clearing the current scene (removing all entities), loading the new world and setting the simulation to the stopped state.
 # Support for this interface is indicated through the WORLD_LOADING value in GetSimulatorFeatures.
 # resource_string field support is indicated through the WORLD_RESOURCE_STRING value in GetSimulatorFeatures.
 # Currently loaded worlds will be unloaded before attempting to load a new one.
