@@ -30,4 +30,4 @@ uint8 UNSUPPORTED_ELEMENTS = 106    # At least one of world definition elements 
 Result result
 
 # Information about the loaded world. Only valid if result is RESULT_OK.
-WorldResource world 
+WorldResource world
