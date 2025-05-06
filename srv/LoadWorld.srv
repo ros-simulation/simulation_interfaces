@@ -3,7 +3,7 @@
 # Support for this interface is indicated through the WORLD_LOADING value in GetSimulatorFeatures.
 # resource_string field support is indicated through the WORLD_RESOURCE_STRING value in GetSimulatorFeatures.
 # Currently loaded worlds will be unloaded before attempting to load a new one.
-# Any previously spawned entities will be removed.
+# Any previously spawned entities will be removed. Once a world is loaded, simulation will be left in a Stopped state.
 
 # Resource such as SDF, USD, MJCF, or other simulator-native format world file.
 string uri
@@ -28,3 +28,6 @@ uint8 UNSUPPORTED_ELEMENTS = 106    # At least one of world definition elements 
 
 # Standard result message
 Result result
+
+# Information about the loaded world. Only valid if result is RESULT_OK.
+WorldResource world 
