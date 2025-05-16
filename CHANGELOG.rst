@@ -2,8 +2,8 @@
 Changelog for package simulation_interfaces
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.0.1 (2025-05-16)
+------------------
 * Add missing `action_msgs` dependency to package.xml `#10 <https://github.com/ros-simulation/simulation_interfaces/issues/10>`_
 * Added error code to SetEntityState.srv (`#8 <https://github.com/ros-simulation/simulation_interfaces/issues/8>`_)
 * Contributors: Adam Dąbrowski, Mateusz Żak, Michał Pełka
