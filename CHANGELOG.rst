@@ -2,6 +2,12 @@
 Changelog for package simulation_interfaces
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Add missing `action_msgs` dependency to package.xml `#10 <https://github.com/ros-simulation/simulation_interfaces/issues/10>`_
+* Added error code to SetEntityState.srv (`#8 <https://github.com/ros-simulation/simulation_interfaces/issues/8>`_)
+* Contributors: Adam Dąbrowski, Mateusz Żak, Michał Pełka
+
 1.0.0 (2025-04-16)
 ------------------
 Initial release of the simulation_interfaces package - a new Standard ROS 2 interfaces for interacting with simulators.
