@@ -1,0 +1,18 @@
+# Return a list of available world resources which can be used with LoadWorld.
+# Support for this interface is indicated through the AVAILABLE_WORLDS value in GetSimulatorFeatures.
+
+# Optional field for additional sources (local or remote) to search, 
+# specified as standard URIs if possible.
+string[] sources
+
+# Only get worlds with tags matching the filter. The filter is optional and matches everything by default.
+# This feature is supported if WORLD_TAGS feature is included in output of GetSimulatorFeatures.
+TagsFilter filter
+
+---
+
+# Standard result message
+Result result
+
+# Available world resources.
+WorldResource[] worlds 
