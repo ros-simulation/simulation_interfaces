@@ -11,7 +11,7 @@ service mechanism itself.
 
 ## Suggested interface implementation priorities
 
-[GetSimulatorFeatures](msg/GetSimulationFeatures.msg) should be implemented first, as it provides users with information about
+[GetSimulatorFeatures](srv/GetSimulationFeatures.srv) should be implemented first, as it provides users with information about
 the state of support for all standard simulation interfaces.
 
 Following that, aim for maintaining consistency within the implemented feature, such as enabling both
