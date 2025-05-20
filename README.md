@@ -23,3 +23,7 @@ Some interfaces represent optional utility and are considered lower priority:
 - [GetNamedPoses](srv/GetNamedPoses.srv)
 - [GetSpawnables](srv/GetSpawnables.srv)
 - [SetEntityInfo](srv/SetEntityInfo.srv)
+- [GetAvailableWorlds](srv/GetAvailableWorlds.srv)
+- [LoadWorld](srv/LoadWorld.srv)
+- [UnloadWorld](srv/UnloadWorld.srv)
+- [GetCurrentWorld](srv/GetCurrentWorld.srv)
