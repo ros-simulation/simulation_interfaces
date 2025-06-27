@@ -23,6 +23,7 @@ set(msg_files
     "msg/EntityInfo.msg"
     "msg/EntityState.msg"
     "msg/NamedPose.msg"
+    "msg/Resource.msg"
     "msg/Result.msg"
     "msg/SimulationState.msg"
     "msg/SimulatorFeatures.msg"
@@ -33,6 +34,8 @@ set(msg_files
 
 set(srv_files
     "srv/DeleteEntity.srv"
+    "srv/GetAvailableWorlds.srv"
+    "srv/GetCurrentWorld.srv"
     "srv/GetEntities.srv"
     "srv/GetEntitiesStates.srv"
     "srv/GetEntityBounds.srv"
@@ -43,16 +46,14 @@ set(srv_files
     "srv/GetSimulationState.srv"
     "srv/GetSimulatorFeatures.srv"
     "srv/GetSpawnables.srv"
+    "srv/LoadWorld.srv"
     "srv/ResetSimulation.srv"
     "srv/SetEntityInfo.srv"
     "srv/SetEntityState.srv"
     "srv/SetSimulationState.srv"
     "srv/SpawnEntity.srv"
     "srv/StepSimulation.srv"
-    "srv/LoadWorld.srv"
     "srv/UnloadWorld.srv"
-    "srv/GetCurrentWorld.srv"
-    "srv/GetAvailableWorlds.srv"
 )
 
 set(action_files
