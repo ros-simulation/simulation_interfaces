@@ -5,14 +5,11 @@
 # World resources may be defined in standard or simulation-specific formats,
 # and, depending on the simulator, loaded from local or remote repositories. 
 
-# World name, which is not necessarily unique.
-string name
 
-# URI which will be accepted by LoadWorld service, unique per world.
-string uri
+string name                               # World name, which is not necessarily unique.
 
-# Optional description of the world
-string description
+Resource world_resource                   # The resource for the world to be loaded.
 
-# Optional tags describing the world (e.g., "indoor", "outdoor", "warehouse")
-string[] tags
+string description                        # Optional custom description of the world
+
+string[] tags                             # Optional tags describing the world (e.g., "indoor", "outdoor", "warehouse")
