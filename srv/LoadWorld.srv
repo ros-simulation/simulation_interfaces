@@ -5,29 +5,25 @@
 # Currently loaded worlds will be unloaded before attempting to load a new one.
 # Any previously spawned entities will be removed. Once a world is loaded, simulation will be left in a Stopped state.
 
-# Resource such as SDF, USD, MJCF, or other simulator-native format world file.
-string uri
+string uri                                  # Resource such as SDF, USD, MJCF, or other simulator-native format world file.
 
-# Simulation world passed as a string. This field is used if the uri field is empty.
-string resource_string
+string resource_string                      # Simulation world passed as a string. This field is used if the uri field is empty.
 
-# Fail on unsupported elements (such as SDFormat sub-tags). By default, such elements are ignored.
-bool fail_on_unsupported_element
+bool fail_on_unsupported_element            # Fail on unsupported elements (such as SDFormat sub-tags). By default, such elements are ignored.
 
-# Ignore missing or unsupported assets. By default, missing or unsupported assets result in failure.
-bool ignore_missing_or_unsupported_assets
+
+bool ignore_missing_or_unsupported_assets   # Ignore missing or unsupported assets. By default, missing or unsupported assets result in failure.
 
 ---
 
-uint8 UNSUPPORTED_FORMAT = 101      # Format for uri or resource string is unsupported.
-uint8 NO_RESOURCE = 102             # Both uri and resource string are empty.
-uint8 RESOURCE_PARSE_ERROR = 103    # Resource file or string failed to parse.
-uint8 MISSING_ASSETS = 104          # At least one of resource assets (such as meshes) was not found.
-uint8 UNSUPPORTED_ASSETS = 105      # At least one of resource assets (such as meshes) is not supported.
-uint8 UNSUPPORTED_ELEMENTS = 106    # At least one of world definition elements such as format tags is unsupported.
+uint8 UNSUPPORTED_FORMAT = 101              # Format for uri or resource string is unsupported.
+uint8 NO_RESOURCE = 102                     # Both uri and resource string are empty.
+uint8 RESOURCE_PARSE_ERROR = 103            # Resource file or string failed to parse.
+uint8 MISSING_ASSETS = 104                  # At least one of resource assets (such as meshes) was not found.
+uint8 UNSUPPORTED_ASSETS = 105              # At least one of resource assets (such as meshes) is not supported.
+uint8 UNSUPPORTED_ELEMENTS = 106            # At least one of world definition elements such as format tags is unsupported.
 
-# Standard result message
-Result result
 
-# Information about the loaded world. Only valid if result is RESULT_OK.
-WorldResource world
+Result result                               # Standard result message
+
+WorldResource world                         # Information about the loaded world. Only valid if result is RESULT_OK.
