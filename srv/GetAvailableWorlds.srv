@@ -3,7 +3,7 @@
 
 # Optional field for additional sources (local or remote) to search, 
 # specified as standard URIs if possible.
-string[] sources
+string[] additional_sources
 
 # Only get worlds with tags matching the filter. The filter is optional and matches everything by default.
 # This feature is supported if WORLD_TAGS feature is included in output of GetSimulatorFeatures.
