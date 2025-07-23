@@ -11,15 +11,13 @@ string name                             # A name to give to the spawned entity.
 bool allow_renaming                     # Determines whether the spawning succeeds with a non-unique name.
                                         # If it is set to true, the user should always check entity_name response field
                                         # and use it for any further interactions.
-string uri                              # Resource such as SDFormat, URDF, USD or MJCF file, a native prefab, etc.
-                                        # Valid URIs can be determined by calling GetSpawnables first, and you can check
-                                        # the simulator format support by reading SimulatorFeatures spawn_formats field.
-                                        # If uri field is empty, resource_string must not be empty.
-string resource_string                  # An entity definition file passed as a string.
-                                        # Simulators may support spawning from a file generated on the fly (e.g. XACRO).
-                                        # It is supported by your simulator if GetSimulatorFeatures includes
-                                        # SPAWNING_RESOURCE_STRING feature.
-                                        # If uri field is not empty, resource_string field will be ignored.
+
+Resource entity_resource                # Resource such as SDFormat, URDF, USD or MJCF file, a native prefab, etc.
+                                        # Valid URIs can be determined by calling GetSpawnables first. 
+                                        # Check simulator format support via the spawn_formats field in GetSimulatorFeatures.
+                                        # Using resource_string is supported if GetSimulatorFeatures includes
+                                        # the SPAWNING_RESOURCE_STRING feature.
+
 string entity_namespace                 # Spawn the entity with all its interfaces under this namespace.
 geometry_msgs/PoseStamped initial_pose  # Initial entity pose.
                                         # The header contains a reference frame, which defaults to global "world" frame.

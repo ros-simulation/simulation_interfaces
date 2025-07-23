@@ -31,6 +31,12 @@ uint8 STEP_SIMULATION_MULTIPLE  = 32      # Supports multi-stepping through simu
                                           # service or through SimulateSteps action.
 uint8 STEP_SIMULATION_ACTION    = 33      # Supports SimulateSteps action interface.
 
+uint8 WORLD_LOADING             = 40      # Supports LoadWorld interface
+uint8 WORLD_RESOURCE_STRING     = 41      # Supports LoadWorld resource_string field
+uint8 WORLD_TAGS                = 42      # Supports world tags and tag filtering
+uint8 WORLD_UNLOADING           = 43      # Supports UnloadWorld interface
+uint8 WORLD_INFO_GETTING        = 44      # Supports GetCurrentWorld interface
+uint8 AVAILABLE_WORLDS          = 45      # Supports GetAvailableWorlds interface
 
 uint16[] features                         # A list of simulation features as specified by the list above.
 

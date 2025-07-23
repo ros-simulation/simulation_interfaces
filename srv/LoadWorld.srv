@@ -1,0 +1,29 @@
+# Load a simulation world from a file or resource.
+# This means clearing the current scene (removing all entities), loading the new world and setting the simulation to the stopped state.
+# Support for this interface is indicated through the WORLD_LOADING value in GetSimulatorFeatures.
+# resource_string field support is indicated through the WORLD_RESOURCE_STRING value in GetSimulatorFeatures.
+# Currently loaded worlds will be unloaded before attempting to load a new one.
+# Any previously spawned entities will be removed. Once a world is loaded, simulation will be left in a Stopped state.
+
+string uri                                  # Resource such as SDF, USD, MJCF, or other simulator-native format world file.
+
+string resource_string                      # Simulation world passed as a string. This field is used if the uri field is empty.
+
+bool fail_on_unsupported_element            # Fail on unsupported elements (such as SDFormat sub-tags). By default, such elements are ignored.
+
+
+bool ignore_missing_or_unsupported_assets   # Ignore missing or unsupported assets. By default, missing or unsupported assets result in failure.
+
+---
+
+uint8 UNSUPPORTED_FORMAT = 101              # Format for uri or resource string is unsupported.
+uint8 NO_RESOURCE = 102                     # Both uri and resource string are empty.
+uint8 RESOURCE_PARSE_ERROR = 103            # Resource file or string failed to parse.
+uint8 MISSING_ASSETS = 104                  # At least one of resource assets (such as meshes) was not found.
+uint8 UNSUPPORTED_ASSETS = 105              # At least one of resource assets (such as meshes) is not supported.
+uint8 UNSUPPORTED_ELEMENTS = 106            # At least one of world definition elements such as format tags is unsupported.
+
+
+Result result                               # Standard result message
+
+WorldResource world                         # Information about the loaded world. Only valid if result is RESULT_OK.

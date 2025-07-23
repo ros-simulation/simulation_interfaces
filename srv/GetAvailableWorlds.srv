@@ -1,0 +1,23 @@
+# Return a list of available world resources which can be used with LoadWorld.
+# Support for this interface is indicated through the AVAILABLE_WORLDS value in GetSimulatorFeatures.
+# By default, a simulator will search its default local and online sources. If some
+# default sources can't be accessed (e.g. due to connectivity issues), the
+# DEFAULT_SOURCES_FAILED error result code will be returned.
+
+string[] additional_sources             # Optional field for additional sources (local or remote) to search, 
+                                        # specified as standard URIs if possible.
+
+TagsFilter filter                       # Only get worlds with tags matching the filter. The filter is optional and matches everything by default.
+                                        # This feature is supported if WORLD_TAGS feature is included in output of GetSimulatorFeatures.
+
+bool offline_only                       # If true, only offline/local sources should be searched. Defaults to false.
+
+bool continue_on_error                  # If true, the simulator will continue to search sources even if some fail.
+                                        # The service will return success if any source yielded worlds. Defaults to false.
+---
+
+uint8 DEFAULT_SOURCES_FAILED = 101      # Some default sources could not be accessed.
+
+Result result                           # Standard result message. A specific result code should be used if some sources were not accessible.
+
+WorldResource[] worlds                  # Available world resources.
