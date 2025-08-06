@@ -1,0 +1,9 @@
+# Unload the current simulation world.
+# Support for this interface is indicated through the WORLD_UNLOADING value in GetSimulatorFeatures.
+# Any previously spawned entities will be removed.
+
+---
+
+uint8 NO_WORLD_LOADED = 101      # No world is loaded at the moment.
+
+Result result # Standard result message
