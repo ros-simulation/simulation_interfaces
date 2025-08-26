@@ -2,6 +2,15 @@
 Changelog for package simulation_interfaces
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Add support for managing simulation worlds (`#4 <https://github.com/ros-simulation/simulation_interfaces/issues/4>`_) ( `#15 <https://github.com/ros-simulation/simulation_interfaces/issues/15>`_)
+
+* Contributors: Ayush Ghosh <ayushg@nvidia.com>
+* Co-authored-by: Martin Pecka <peci1@seznam.cz>
+* Co-authored-by: Adam Dąbrowski <adam.dabrowski@robotec.ai>
+* Co-authored-by: Mateusz Żak <mateusz.zak@robotec.ai>
+
 1.0.1 (2025-05-16)
 ------------------
 * Add missing `action_msgs` dependency to package.xml `#10 <https://github.com/ros-simulation/simulation_interfaces/issues/10>`_
