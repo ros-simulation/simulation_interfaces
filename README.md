@@ -11,7 +11,7 @@ service mechanism itself.
 
 ## Suggested interface implementation priorities
 
-[GetSimulatorFeatures](msg/GetSimulationFeatures.msg) should be implemented first, as it provides users with information about
+[GetSimulatorFeatures](srv/GetSimulatorFeatures.srv) should be implemented first, as it provides users with information about
 the state of support for all standard simulation interfaces.
 
 Following that, aim for maintaining consistency within the implemented feature, such as enabling both
@@ -23,3 +23,8 @@ Some interfaces represent optional utility and are considered lower priority:
 - [GetNamedPoses](srv/GetNamedPoses.srv)
 - [GetSpawnables](srv/GetSpawnables.srv)
 - [SetEntityInfo](srv/SetEntityInfo.srv)
+- [GetAvailableWorlds](srv/GetAvailableWorlds.srv)
+- [LoadWorld](srv/LoadWorld.srv)
+- [UnloadWorld](srv/UnloadWorld.srv)
+- [GetCurrentWorld](srv/GetCurrentWorld.srv)
+
