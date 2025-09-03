@@ -1,0 +1,10 @@
+# Get information about the currently loaded world in the simulation.
+# Support for this interface is indicated through the WORLD_INFO_GETTING value in GetSimulatorFeatures.
+
+---
+
+uint8 NO_WORLD_LOADED = 101     # No world is loaded at the moment.
+
+Result result                   # Standard result message
+
+WorldResource world             # Information about the currently loaded world. Only valid if result is RESULT_OK.
