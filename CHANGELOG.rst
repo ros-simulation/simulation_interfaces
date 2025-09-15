@@ -2,8 +2,8 @@
 Changelog for package simulation_interfaces
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.3.0 (2025-09-15)
+------------------
 Add support for managing simulation worlds (`#4 <https://github.com/ros-simulation/simulation_interfaces/issues/4>`_) ( `#17 <https://github.com/ros-simulation/simulation_interfaces/issues/17>`_)
 
 * Contributors: Ayush Ghosh <ayushg@nvidia.com>
