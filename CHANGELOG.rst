@@ -2,6 +2,15 @@
 Changelog for package simulation_interfaces
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Add support for managing simulation worlds (`#4 <https://github.com/ros-simulation/simulation_interfaces/issues/4>`_) ( `#16 <https://github.com/ros-simulation/simulation_interfaces/issues/16>`_)
+
+* Contributors: Ayush Ghosh <ayushg@nvidia.com>
+* Co-authored-by: Martin Pecka <peci1@seznam.cz>
+* Co-authored-by: Adam Dąbrowski <adam.dabrowski@robotec.ai>
+* Co-authored-by: Mateusz Żak <mateusz.zak@robotec.ai>
+
 1.0.0 (2025-04-16)
 ------------------
 Initial release of the simulation_interfaces package - a new Standard ROS 2 interfaces for interacting with simulators.
