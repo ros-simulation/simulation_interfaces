@@ -3,6 +3,11 @@
 Standard ROS 2 interfaces for interacting with simulators. 
 Messages, services, and actions are documented in their respective files.
 
+## Examples and resources
+
+You will find examples, simulation scenes, RViz2 plugin and tutorials in 
+[simulation_interfaces_examples](https://github.com/ros-simulation/simulation_interfaces_examples) repository.
+
 ## Result.msg
 
 The standard includes a generic message for handling service responses, [Result.msg](msg/Result.msg),
