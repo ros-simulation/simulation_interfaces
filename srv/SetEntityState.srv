@@ -6,6 +6,9 @@ EntityState state                       # New state to set immediately. The time
                                         # If non-zero twist or acceleration is requested for static object, the service call
                                         # fails and RESULT_OPERATION_FAILED is returned.
                                         # Note that the acceleration field may be ignored by simulators.
+bool set_pose                           # Flags to choose whether pose, twist or acceleration should be set or ignored.
+bool set_twist                          # These can be used to choose which EntityState properties to set.
+bool set_acceleration
 
 ---
 
