@@ -5,9 +5,8 @@
 # Currently loaded worlds will be unloaded before attempting to load a new one.
 # Any previously spawned entities will be removed. Once a world is loaded, simulation will be left in a Stopped state.
 
-string uri                                  # Resource such as SDF, USD, MJCF, or other simulator-native format world file.
-
-string resource_string                      # Simulation world passed as a string. This field is used if the uri field is empty.
+Resource world_resource                     # Resource such as SDF, USD, MJCF, or other simulator-native format world file or,
+                                            # Simulation world passed as a string. 
 
 bool fail_on_unsupported_element            # Fail on unsupported elements (such as SDFormat sub-tags). By default, such elements are ignored.
 
