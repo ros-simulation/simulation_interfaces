@@ -33,6 +33,7 @@ set(msg_files
 )
 
 set(srv_files
+    "srv/BatchSpawnEntities.srv"
     "srv/DeleteEntity.srv"
     "srv/GetAvailableWorlds.srv"
     "srv/GetCurrentWorld.srv"
