@@ -38,7 +38,7 @@ uint8 WORLD_UNLOADING           = 43      # Supports UnloadWorld interface
 uint8 WORLD_INFO_GETTING        = 44      # Supports GetCurrentWorld interface
 uint8 AVAILABLE_WORLDS          = 45      # Supports GetAvailableWorlds interface
 
-uint8 SPAWNING_BATCH            = 50      # Support batch spawning (SpawnEntities)
+uint8 SPAWNING_ENTITIES         = 50      # Support spawn multiple entities
 
 uint16[] features                         # A list of simulation features as specified by the list above.
 
