@@ -2,6 +2,14 @@
 Changelog for package simulation_interfaces
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Rename ``level_resource`` to ``world_resource`` in ``LoadWorld`` and ``WorldResource`` for consistent terminology (`#13 <https://github.com/ros-simulation/simulation_interfaces/issues/13>`_)
+* Add ``SpawnEntities`` service for spawning multiple entities in a single call (`#20 <https://github.com/ros-simulation/simulation_interfaces/issues/20>`_, `#25 <https://github.com/ros-simulation/simulation_interfaces/issues/25>`_)
+* Make setting entity values optional via boolean flags in ``SetEntityState`` (`#21 <https://github.com/ros-simulation/simulation_interfaces/issues/21>`_)
+* Add links to example implementations in README (`#19 <https://github.com/ros-simulation/simulation_interfaces/issues/19>`_)
+* Contributors: Adam Dąbrowski, Luca Della Vedova, Mateusz Żak, Michał Pełka, Norbert Prokopiuk
+
 2.0.0 (2025-07-29)
 ------------------
 Add support for managing simulation worlds `#4 <https://github.com/ros-simulation/simulation_interfaces/issues/4>`_
