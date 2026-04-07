@@ -1,0 +1,12 @@
+# Spawn multiple entities (robots, objects) by name or URI.
+# Support for this interface is indicated through the SPAWNING_ENTITIES value in GetSimulatorFeatures.
+
+SpawnEntity[] spawn_requests            # List of spawn requests.
+
+---
+
+# Additional result.result_code values for this service. Check result.error_message for further details.
+uint8 ENTITIES_SPAWN_FAILED = 150       # There was at least one failed spawn request. Check individual results in the `results`.
+
+Result result                           # If one or more requests failed, it will give ENTITIES_SPAWN_FAILED otherwise RESULT_OK
+SpawnResult[] results                   # List of results for each spawn request.

@@ -1,8 +1,9 @@
 # Spawn an entity (a robot, other object) by name or URI
+# This interface is deprecated in favour of SpawnEntities.srv
 # Support for this interface is indicated through the SPAWNING value in GetSimulationFeatures.
 
 string name                             # A name to give to the spawned entity.
-                                        # If empty, a name field in the uri file or resource_string will be used,
+                                        # If empty, the name field in the URI file or resource_string will be used,
                                         # if supported and not empty (e.g. "name" field in SDFormat, URDF).
                                         # If the name is still empty or not unique (as determined by the simulator),
                                         # the service returns a generated name in the entity_name response field if the
