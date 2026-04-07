@@ -2,6 +2,12 @@
 Changelog for package simulation_interfaces
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.5.0 (2026-04-07)
+------------------
+* Add ``SpawnEntities`` service for spawning multiple entities in a single call (`#20 <https://github.com/ros-simulation/simulation_interfaces/issues/20>`_, `#25 <https://github.com/ros-simulation/simulation_interfaces/issues/25>`_) (`#23 <https://github.com/ros-simulation/simulation_interfaces/issues/23>`_)
+
+* Contributors: Michał Pełka <michal.pelka@robotec.ai>, Mateusz Żak <mateusz.zak@robotec.ai>
+
 1.2.0 (2025-09-15)
 ------------------
 * Add support for managing simulation worlds (`#4 <https://github.com/ros-simulation/simulation_interfaces/issues/4>`_) ( `#16 <https://github.com/ros-simulation/simulation_interfaces/issues/16>`_)
