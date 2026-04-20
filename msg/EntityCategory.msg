@@ -1,10 +1,11 @@
 # Entity major category, which often warrants a specific way to handle such entity, e.g. when handling humans
 # or mapping persistence for dynamic vs static objects.
 
-uint8 CATEGORY_OBJECT         = 0    # Generic or unspecified type.
-uint8 CATEGORY_ROBOT          = 1    # A broad category for mobile robots, arms, drones etc.,
+uint8 CATEGORY_UNKNOWN        = 0    # Unknown or unspecified type. Used for entities that do not exist or are not found.
+uint8 CATEGORY_OBJECT         = 1    # Generic type.
+uint8 CATEGORY_ROBOT          = 2    # A broad category for mobile robots, arms, drones etc.,
                                      # usually with ROS 2 interfaces.
-uint8 CATEGORY_HUMAN          = 2    # Simulated humans, e.g. pedestrians, warehouse workers.
+uint8 CATEGORY_HUMAN          = 3    # Simulated humans, e.g. pedestrians, warehouse workers.
                                      # Compared to CATEGORY_DYNAMIC_OBJECT, humans are often expected to be treated
                                      # exceptionally in regards to safety constraints.
 uint8 CATEGORY_DYNAMIC_OBJECT = 4    # Vehicles, animals, mobile obstacles, typically to present a detection and
