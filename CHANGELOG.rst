@@ -2,6 +2,12 @@
 Changelog for package simulation_interfaces
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.6.1 (2026-04-23)
+------------------
+Added missing INVALID_POSE error code (`#27 <https://github.com/ros-simulation/simulation_interfaces/issues/27>`_)
+
+* Contributors: Norbert Prokopiuk
+
 1.6.0 (2026-04-07)
 ------------------
 * Add ``SpawnEntities`` service for spawning multiple entities in a single call (`#20 <https://github.com/ros-simulation/simulation_interfaces/issues/20>`_, `#25 <https://github.com/ros-simulation/simulation_interfaces/issues/25>`_) (`#24 <https://github.com/ros-simulation/simulation_interfaces/issues/24>`_)
