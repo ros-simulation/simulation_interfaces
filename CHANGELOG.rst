@@ -2,8 +2,8 @@
 Changelog for package simulation_interfaces
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.5.1 (2026-04-23)
+------------------
 * Added missing INVALID_POSE error code (`#28 <https://github.com/ros-simulation/simulation_interfaces/issues/28>`_)
 
 * Contributors: Norbert Prokopiuk
