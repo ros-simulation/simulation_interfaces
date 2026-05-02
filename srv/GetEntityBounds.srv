@@ -2,10 +2,10 @@
 # Support for this interface is indicated through the ENTITY_BOUNDS value in GetSimulationFeatures.
 
 string entity                         # Entity identified by its unique name as returned by GetEntities / SpawnEntity.
+uint8 type 255                        # Requested bounding box type. Use Bounds.TYPE_* constants.
+                                      # Defaults to TYPE_UNSPECIFIED (255), meaning no preference: the simulator chooses,
 
 ---
 
 Result result
 Bounds bounds                         # Entity bounds. Only valid if result.result_code is OK.
-                                      # Bounds with TYPE_BOX should be returned, unless there is a configuration
-                                      # parameter for the simulator to control the type and it is set otherwise.
