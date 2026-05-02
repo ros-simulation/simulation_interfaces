@@ -2,6 +2,12 @@
 Changelog for package simulation_interfaces
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+2.2.0 (2026-05-01)
+------------------
+* Add optional ``type`` field to ``GetEntityBounds.srv`` request to allow callers to specify the desired bounding box type (`#26 <https://github.com/ros-simulation/simulation_interfaces/issues/26>`_)
+* Add ``TYPE_UNSPECIFIED`` constant to ``Bounds.msg`` to serve as a no-preference sentinel in service requests (`#26 <https://github.com/ros-simulation/simulation_interfaces/issues/26>`_)
+* Contributors: Ayush Ghosh <ayushg@nvidia.com>
+
 2.1.0 (2026-04-07)
 ------------------
 * Rename ``level_resource`` to ``world_resource`` in ``LoadWorld`` and ``WorldResource`` for consistent terminology (`#13 <https://github.com/ros-simulation/simulation_interfaces/issues/13>`_)
