@@ -17,6 +17,7 @@ uint8 TYPE_BOX           = 1      # Axis-aligned bounding box, points field shou
 uint8 TYPE_CONVEX_HULL   = 2      # Points define a convex hull (at least 3 non-collinear points).
 uint8 TYPE_SPHERE        = 3      # A sphere with center and radius. First element of points vector is the center.
                                   # The x field of the second point of the vector is the radius (y and z are ignored).
+uint8 TYPE_UNSPECIFIED   = 255    # Used in service requests to indicate no preferred type; the simulator decides.
 
 
 uint8 type
